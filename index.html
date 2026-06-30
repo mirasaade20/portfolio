@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mira | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <div class="logo">Mira</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <h1>Hi, I'm <span class="highlight">Mira</span> 👋</h1>
+    <p class="tagline">CS Student · Mobile Developer · Creative Builder</p>
+    <a href="#projects" class="btn">See my work</a>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science student at the American University of Technology,
+      passionate about building apps that solve real problems — from AI tools
+      to mobile experiences. I also work in real estate marketing in Dubai,
+      creating content that connects with Arab audiences.
+    </p>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- CARD 1: SudoMind -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+          <!-- Once published, replace the div above with:
+          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="SudoMind demo" frameborder="0" allowfullscreen></iframe>
+          -->
+        </div>
+        <div class="card-body">
+          <h3>SudoMind</h3>
+          <p class="card-desc">A Sudoku mobile app for Android with a custom purple theme, sound effects, and Google Play release.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>Wanted a clean, distraction-free Sudoku app without ads or clutter.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Built native in Kotlin with custom game logic, win/loss dialogs, and a stats dashboard using ViewPager2.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>Fully functional app published to Google Play with sound effects and notifications.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Android</span>
+            <span class="tag">Game</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: Grandmaster Chess -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Grandmaster Chess</h3>
+          <p class="card-desc">Chess engine with Minimax + Alpha-Beta pruning AI, cinematic dark UI, and AI vs AI mode.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>Wanted to apply AI search algorithms to a real, playable game.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Implemented Minimax with Alpha-Beta pruning, added difficulty levels, and tracked node counts for performance analysis.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>A fully playable chess game with adjustable AI difficulty and a cinematic dark luxury interface.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pygame</span>
+            <span class="tag">AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: CAUGHT -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>CAUGHT</h3>
+          <p class="card-desc">AI-powered political accountability platform using NLP to detect contradictions in politicians' statements.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>Politicians' contradictory statements often go untracked and unverified.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Built an NLP pipeline that scrapes, parses, and compares public statements to flag inconsistencies.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>A working prototype platform, developed as my senior capstone project.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Senior Project</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: Knight's Tour -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Knight's Tour Puzzle</h3>
+          <p class="card-desc">Visual puzzle game with multiple color themes and a Warnsdorff's heuristic AI solver.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>Built for my AI course (CSC 310) to demonstrate heuristic search visually.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Implemented Warnsdorff's heuristic with a custom UI, color themes, and a settings screen.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>An interactive, visually polished puzzle solver with smooth animations.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pygame</span>
+            <span class="tag">Algorithm</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: CrimeTracker -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>CrimeTracker</h3>
+          <p class="card-desc">Full-stack Android crime reporting app with Firebase, offline caching, and emergency SOS.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>Communities need a fast, reliable way to report and stay aware of local incidents.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Built with Kotlin and a PHP/MySQL backend, integrating Firebase auth, media uploads, and SQLite offline caching.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>A working app with crime sharing, breaking news, and reliable offline support.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: SafeGuard -->
+      <div class="card fade-in">
+        <div class="card-video">
+          <div class="video-placeholder">
+            <span>🎬 Demo video coming soon</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>SafeGuard</h3>
+          <p class="card-desc">Personal safety app with accelerometer-based alert escalation and SOS messaging.</p>
+          <div class="card-details">
+            <div class="detail-row">
+              <span class="detail-label">The Problem</span>
+              <p>People need a discreet, fast way to alert contacts during an emergency.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">My Approach</span>
+              <p>Built in .NET MAUI using accelerometer data to detect distress motions and trigger automatic alerts.</p>
+            </div>
+            <div class="detail-row">
+              <span class="detail-label">Result</span>
+              <p>A cross-platform safety app, later ported from .NET 8 to .NET 10.</p>
+            </div>
+          </div>
+          <div class="tags">
+            <span class="tag">.NET MAUI</span>
+            <span class="tag">C#</span>
+            <span class="tag">Safety</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="edu-item">
+      <h3>B.S. Computer Science</h3>
+      <p>American University of Technology · 2021 – Present</p>
+    </div>
+
+    <div class="edu-item">
+      <h3>Real Estate Marketing</h3>
+      <p>Social media & property content · Dubai, UAE</p>
+    </div>
+
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Made by Mira ✨ · <a href="mailto:your@email.com">your@email.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
