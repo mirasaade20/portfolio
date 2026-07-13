@@ -4,7 +4,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fff9fe;
+  background: #faf7ff;
   color: #1a1a1a;
 }
 
@@ -14,8 +14,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 3rem;
-  background: #fff;
-  border-bottom: 3px solid #fce7f3;
+  background: #f3eeff;
+  border-bottom: 3px solid #e9d5ff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -75,6 +75,7 @@ nav {
   line-height: 1.05;
   margin-bottom: 1rem;
   position: relative; z-index: 1;
+  color: #1a1a1a;
 }
 
 .highlight {
@@ -158,10 +159,10 @@ section h2::after {
 }
 
 .card {
-  background: #fff;
+  background: #f3eeff;
   border-radius: 24px;
   padding: 1.5rem;
-  border: 2px solid #f0f0f0;
+  border: 2px solid #e9d5ff;
   transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 
@@ -175,13 +176,14 @@ section h2::after {
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 24px 60px rgba(168, 85, 247, 0.18);
-  border-color: #e9d5ff;
+  border-color: #c4b5fd;
 }
 
 .card-body h3 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #1a1a1a;
 }
 
 .card-desc {
@@ -285,9 +287,9 @@ section h2::after {
   margin-bottom: 2rem;
   padding: 1.5rem;
   border-radius: 16px;
-  background: #fff;
+  background: #faf7ff;
   border-left: 5px solid #a855f7;
-  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.08);
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.1);
 }
 
 .edu-item h3 {
@@ -301,7 +303,7 @@ section h2::after {
 
 /* ===== FOOTER ===== */
 footer {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #2d1050, #0d2240);
   color: #fff;
   text-align: center;
   padding: 2.5rem;
