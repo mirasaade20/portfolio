@@ -372,3 +372,22 @@ footer a:hover { color: #2dd4bf; }
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+.more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: none;
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  padding: 0.45rem 1.2rem;
+  border-radius: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.more-btn:hover {
+  background: #a855f7;
+  color: #fff;
+}
