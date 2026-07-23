@@ -44,34 +44,40 @@ nav {
 
 /* ===== HERO ===== */
 #hero {
-  position: relative;
   text-align: center;
   padding: 7rem 2rem;
+  background: linear-gradient(160deg, #fdf2ff 0%, #fce7f3 30%, #ede9fe 60%, #ccfbf1 100%);
+  position: relative;
   overflow: hidden;
 }
 
-.hero-bg {
+#hero::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  background-image: url('roses.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.35;
-  z-index: 0;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, #f9a8d4 0%, transparent 70%);
+  top: -150px; right: -100px;
+  pointer-events: none;
 }
 
 #hero::after {
   content: '';
   position: absolute;
-  inset: 0;
-  background: linear-gradient(160deg, rgba(253,242,255,0.85) 0%, rgba(252,231,243,0.8) 40%, rgba(204,251,241,0.75) 100%);
-  z-index: 1;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, #a5f3fc 0%, transparent 70%);
+  bottom: -100px; left: -80px;
+  pointer-events: none;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
+#hero h1 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+  position: relative; z-index: 1;
+  color: #1a1a1a;
 }
+
 .highlight {
   background: linear-gradient(135deg, #ec4899, #a855f7, #2dd4bf);
   -webkit-background-clip: text;
@@ -384,4 +390,16 @@ footer a:hover { color: #2dd4bf; }
 .more-btn:hover {
   background: #a855f7;
   color: #fff;
+}
+.roses-banner {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.roses-banner img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
