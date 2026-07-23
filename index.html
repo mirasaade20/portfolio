@@ -1,393 +1,103 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+<!DOCTYPE html>
+<html lang="en">
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mira | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #faf7ff;
-  color: #1a1a1a;
-}
+<body>
 
-/* ===== NAV ===== */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 3rem;
-  background: #f3eeff;
-  border-bottom: 3px solid #e9d5ff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <div class="logo">Mira</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
 
-.logo {
-  font-size: 1.6rem;
-  font-weight: 900;
-  background: linear-gradient(135deg, #f472b6, #a855f7, #2dd4bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <h1>Hi, I'm <span class="highlight">Mira</span> 👋</h1>
+    <p class="tagline">CS Student · Mobile Developer · Creative Builder</p>
+    <a href="#projects" class="btn">See my work</a>
+  </section>
 
-.nav-links { list-style: none; display: flex; gap: 2rem; }
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a Computer Science student at the American University of Technology,
+      passionate about building apps that solve real problems — from AI tools
+      to mobile experiences. 
+    </p>
+  </section>
 
-.nav-links a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.2s;
-}
+ <!-- ========== PROJECTS ========== -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-grid">
 
-.nav-links a:hover { color: #a855f7; }
+    <!-- CARD 1: 8-Puzzle Lab -->
+    <div class="card fade-in">
+      <div class="card-video">
+        <iframe src="https://www.youtube.com/embed/MErpe9CyqtI?si=KEgLSwaUrNGm8_VK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <h3>8-Puzzle Lab</h3>
+        <p class="card-desc">A sliding puzzle game with an A* AI solver, heuristic race mode, and statistics dashboard — built in Python.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pygame</span>
+          <span class="tag">AI / A*</span>
+        </div>
+        <a href="puzzle.html" class="more-btn">More info →</a>
+      </div>
+    </div>
 
-/* ===== HERO ===== */
-#hero {
-  text-align: center;
-  padding: 7rem 2rem;
-  background: linear-gradient(160deg, #fdf2ff 0%, #fce7f3 30%, #ede9fe 60%, #ccfbf1 100%);
-  position: relative;
-  overflow: hidden;
-}
+    <!-- CARD 2: Quiz Game -->
+    <div class="card fade-in">
+      <div class="card-video">
+        <iframe src="https://www.youtube.com/embed/pGNWIOs5JM0?si=t8QTlGQ1ZAHev9mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="card-body">
+        <h3>Quiz Game</h3>
+        <p class="card-desc">A web-based programming trivia quiz with score tracking and clean interactive UI — built in HTML, CSS & JavaScript.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <a href="quiz.html" class="more-btn">More info →</a>
+      </div>
+    </div>
 
-#hero::before {
-  content: '';
-  position: absolute;
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, #f9a8d4 0%, transparent 70%);
-  top: -150px; right: -100px;
-  pointer-events: none;
-}
+  </div>
+</section>
 
-#hero::after {
-  content: '';
-  position: absolute;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, #a5f3fc 0%, transparent 70%);
-  bottom: -100px; left: -80px;
-  pointer-events: none;
-}
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <h2>Education</h2>
 
-#hero h1 {
-  font-size: clamp(2.8rem, 7vw, 5.5rem);
-  font-weight: 900;
-  line-height: 1.05;
-  margin-bottom: 1rem;
-  position: relative; z-index: 1;
-  color: #1a1a1a;
-}
+    <div class="edu-item">
+      <h3>B.S. Computer Science</h3>
+      <p>American University of Technology · 2021 – Present</p>
+    </div>
 
-.highlight {
-  background: linear-gradient(135deg, #ec4899, #a855f7, #2dd4bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+   
 
-.tagline {
-  font-size: 1.15rem;
-  color: #6b21a8;
-  margin-bottom: 2.5rem;
-  font-weight: 500;
-  position: relative; z-index: 1;
-}
+  </section>
 
-.btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #ec4899, #a855f7);
-  color: #fff;
-  padding: 0.9rem 2.5rem;
-  border-radius: 100px;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  position: relative; z-index: 1;
-}
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>Made by Mira ✨ · <a href="mailto:your@email.com">mirasaade20@gmail.com</a></p>
+  </footer>
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 35px rgba(168, 85, 247, 0.5);
-}
+  <script src="script.js"></script>
 
-/* ===== SECTIONS SHARED ===== */
-section {
-  padding: 5rem 3rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-section h2 {
-  font-size: 2.2rem;
-  font-weight: 900;
-  margin-bottom: 2.5rem;
-  display: inline-block;
-}
-
-section h2::after {
-  content: '';
-  display: block;
-  height: 5px;
-  border-radius: 5px;
-  background: linear-gradient(90deg, #ec4899, #a855f7, #2dd4bf);
-  margin-top: 6px;
-}
-
-/* ===== ABOUT ===== */
-#about {
-  max-width: 100%;
-  padding: 5rem 10%;
-  background: linear-gradient(135deg, #fdf4ff, #f0fdfa);
-  border-top: 4px solid #f9a8d4;
-  border-bottom: 4px solid #a5f3fc;
-}
-
-#about p {
-  font-size: 1.1rem;
-  line-height: 1.9;
-  color: #374151;
-  max-width: 700px;
-}
-
-/* ===== PROJECTS GRID ===== */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.card {
-  background: #f3eeff;
-  border-radius: 24px;
-  padding: 1.5rem;
-  border: 2px solid #e9d5ff;
-  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-}
-
-.card:nth-child(1) { border-top: 5px solid #ec4899; }
-.card:nth-child(2) { border-top: 5px solid #a855f7; }
-.card:nth-child(3) { border-top: 5px solid #2dd4bf; }
-.card:nth-child(4) { border-top: 5px solid #f97316; }
-.card:nth-child(5) { border-top: 5px solid #eab308; }
-.card:nth-child(6) { border-top: 5px solid #ec4899; }
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 24px 60px rgba(168, 85, 247, 0.18);
-  border-color: #c4b5fd;
-}
-
-.card-body h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #1a1a1a;
-}
-
-.card-desc {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-/* ===== VIDEO AREA ===== */
-.card-video {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  border-radius: 14px;
-  overflow: hidden;
-  margin-bottom: 1.2rem;
-}
-
-.card-video iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  border: none;
-  border-radius: 14px;
-}
-
-.video-placeholder {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #fdf4ff, #f0fdfa, #fef9c3);
-  border-radius: 14px;
-}
-
-.video-placeholder span {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: #a855f7;
-}
-
-/* ===== PROJECT DETAILS ===== */
-.card-details {
-  margin: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-}
-
-.detail-row {
-  border-left: 3px solid #f472b6;
-  padding-left: 0.8rem;
-  border-radius: 0;
-}
-
-.detail-label {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #a855f7;
-  display: block;
-  margin-bottom: 0.2rem;
-}
-
-.detail-row p {
-  font-size: 0.85rem;
-  color: #555;
-  line-height: 1.6;
-}
-
-/* ===== TAGS ===== */
-.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
-
-.tag {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 100px;
-  letter-spacing: 0.04em;
-}
-
-.card:nth-child(1) .tag { background: #fce7f3; color: #9d174d; }
-.card:nth-child(2) .tag { background: #f3e8ff; color: #6b21a8; }
-.card:nth-child(3) .tag { background: #ccfbf1; color: #065f46; }
-.card:nth-child(4) .tag { background: #ffedd5; color: #9a3412; }
-.card:nth-child(5) .tag { background: #fef9c3; color: #713f12; }
-.card:nth-child(6) .tag { background: #fce7f3; color: #9d174d; }
-
-/* ===== EDUCATION ===== */
-#education {
-  max-width: 100%;
-  padding: 5rem 10%;
-  background: linear-gradient(135deg, #ede9fe, #fce7f3);
-}
-
-.edu-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  border-radius: 16px;
-  background: #faf7ff;
-  border-left: 5px solid #a855f7;
-  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.1);
-}
-
-.edu-item h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #6b21a8;
-  margin-bottom: 0.3rem;
-}
-
-.edu-item p { color: #666; font-size: 0.95rem; }
-
-/* ===== FOOTER ===== */
-footer {
-  background: linear-gradient(135deg, #2d1050, #0d2240);
-  color: #fff;
-  text-align: center;
-  padding: 2.5rem;
-  font-size: 0.95rem;
-}
-
-footer a {
-  color: #f472b6;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-footer a:hover { color: #2dd4bf; }
-
-/* ===== SCROLL ANIMATIONS ===== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* ===== MORE INFO BUTTON ===== */
-.more-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: none;
-  border: 2px solid #a855f7;
-  color: #a855f7;
-  padding: 0.45rem 1.2rem;
-  border-radius: 100px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.more-btn:hover {
-  background: #a855f7;
-  color: #fff;
-}
-
-.more-btn.open {
-  background: #a855f7;
-  color: #fff;
-}
-
-/* ===== COLLAPSIBLE DETAILS ===== */
-.card-details.hidden {
-  display: none;
-}
-
-.card-details {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  animation: fadeDown 0.3s ease-out;
-}
-
-@keyframes fadeDown {
-  from { opacity: 0; transform: translateY(-8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-.more-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: none;
-  border: 2px solid #a855f7;
-  color: #a855f7;
-  padding: 0.45rem 1.2rem;
-  border-radius: 100px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.more-btn:hover {
-  background: #a855f7;
-  color: #fff;
-}
+</body>
+</html>
