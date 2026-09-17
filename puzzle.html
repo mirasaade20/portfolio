@@ -1,109 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>8-Puzzle Lab | Mira's Portfolio</title>
+  <title>8-Puzzle Lab — A* search playground | Mira Saade</title>
+  <meta name="description" content="8-Puzzle Lab: a Python and Pygame sliding puzzle with an A* solver, a heuristic race mode and a benchmark dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="project.css">
 </head>
+
 <body>
 
-  <nav>
-    <div class="logo">Mira</div>
-    <a href="index.html" class="back-btn">← Back to Portfolio</a>
-  </nav>
+  <header class="nav-wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="index.html">
+        <span class="logo-mark">MS</span>
+        <span class="logo-text">Mira Saade</span>
+      </a>
+      <a href="index.html" class="back-btn">Back to portfolio</a>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <div class="project-hero">
     <div class="project-hero-content">
-      <div class="project-tags">
-        <span class="tag">Python</span>
-        <span class="tag">Pygame</span>
-        <span class="tag">AI / A*</span>
-        <span class="tag">Algorithm</span>
-      </div>
+      <p class="crumb"><a href="index.html">Portfolio</a> / Projects / 8-Puzzle Lab</p>
+
       <h1>8-Puzzle Lab</h1>
-      <p>A sliding puzzle playground with an A* AI solver, side-by-side heuristic race, and a benchmark statistics dashboard.</p>
+      <p class="lede">
+        A sliding puzzle you can play yourself or hand to an A* solver — with two heuristics racing on the same board
+        and a dashboard that benchmarks how they compare.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">Python</span><span class="tag">Pygame</span><span class="tag">A* search</span><span
+          class="tag">Heuristics</span>
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Solo — design and development</dd>
+        </div>
+        <div>
+          <dt>Course</dt>
+          <dd>Artificial Intelligence, CSC 310</dd>
+        </div>
+        <div>
+          <dt>Screens</dt>
+          <dd>Home, Solo Play, AI Race, Statistics, Settings</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>Academic project</dd>
+        </div>
+      </dl>
     </div>
   </div>
 
   <div class="project-body">
 
-    <!-- VIDEO -->
-    <section class="project-section">
-      <h2>Demo Video</h2>
-      <div class="project-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/MErpe9CyqtI?si=KEgLSwaUrNGm8_VK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
-
     <!-- OVERVIEW -->
     <section class="project-section">
-      <h2>Project Overview</h2>
+      <h2>Overview</h2>
       <div class="info-grid">
         <div class="info-card">
-          <span class="info-label">The Problem</span>
-          <p>I wanted to visualize and compare AI search algorithms on a real, interactive puzzle — not just run them in the terminal.</p>
+          <span class="info-label">The problem</span>
+          <p>Search algorithms are usually compared as numbers in a terminal. That tells you which won, but not what
+            either one was doing.</p>
         </div>
         <div class="info-card">
-          <span class="info-label">My Approach</span>
-          <p>Built a full multi-screen app in Python using Pygame. The app has 5 screens: Home, Solo Play, AI Race, Statistics, and Settings.</p>
+          <span class="info-label">My approach</span>
+          <p>A five-screen Pygame app where the same board can be played by hand or solved by A*, and where two
+            heuristics run side by side in real time.</p>
         </div>
         <div class="info-card">
           <span class="info-label">Result</span>
-          <p>A fully playable and resizable puzzle app where you can play manually or watch two AI heuristics race to solve the same board simultaneously.</p>
+          <p>A resizable app that makes the difference between Manhattan Distance and Linear Conflict visible instead of
+            theoretical.</p>
         </div>
-        <div class="info-card">
-          <span class="info-label">Course</span>
-          <p>Built for AI course (CSC 310) at the American University of Technology.</p>
-        </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="project-section">
+      <h2>Demo</h2>
+      <div class="project-video">
+        <iframe src="https://www.youtube.com/embed/MErpe9CyqtI?si=KEgLSwaUrNGm8_VK" title="8-Puzzle Lab demo video"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
 
     <!-- FEATURES -->
     <section class="project-section">
-      <h2>Features</h2>
+      <h2>What's in it</h2>
       <ul class="feature-list">
-        <li>🧩 <strong>Solo Play</strong> — play manually with an A* hint button on demand</li>
-        <li>🤖 <strong>AI Race</strong> — watch Manhattan Distance vs Linear Conflict heuristics race side by side</li>
-        <li>📊 <strong>Statistics Dashboard</strong> — benchmark multiple puzzles and view performance charts</li>
-        <li>🎨 <strong>Color Themes</strong> — multiple visual themes selectable from Settings</li>
-        <li>📐 <strong>Resizable Window</strong> — scales perfectly to any screen size, fullscreen with F11</li>
+        <li><strong>Solo play</strong> — solve it yourself, with an A* hint available whenever you're stuck</li>
+        <li><strong>AI race</strong> — Manhattan Distance against Linear Conflict on an identical board, running side by
+          side</li>
+        <li><strong>Statistics dashboard</strong> — benchmark across multiple puzzles and read the results as charts</li>
+        <li><strong>Colour themes</strong> — selectable from a settings screen</li>
+        <li><strong>Resizable window</strong> — the layout scales to any window size, with fullscreen on F11</li>
+      </ul>
+    </section>
+
+    <!-- BUILD NOTES -->
+    <section class="project-section">
+      <h2>Build notes</h2>
+      <ul class="challenge-list">
+        <li>
+          <h3>Racing without freezing the window</h3>
+          <p>A solver running to completion blocks the frame loop, so the search had to be stepped through in a way that
+            keeps both boards animating and the interface responsive.</p>
+        </li>
+        <li>
+          <h3>A fair comparison</h3>
+          <p>Both heuristics start from the same scrambled board and are measured the same way, so the race reflects the
+            heuristic rather than luck.</p>
+        </li>
+        <li>
+          <h3>Layout in a framework with no layout system</h3>
+          <p>Pygame draws pixels, not components — every screen had to be built to scale proportionally rather than
+            sitting at fixed coordinates.</p>
+        </li>
       </ul>
     </section>
 
     <!-- SCREENSHOTS -->
     <section class="project-section">
-      <h2>Screenshots</h2>
+      <h2>Screens</h2>
       <div class="screenshots-grid">
         <div class="screenshot-placeholder">
-          <span>📸 Screenshot 1</span>
-          <p>Add your image here</p>
+          <span>Home</span>
+          <p>Add puzzle1.png</p>
         </div>
         <div class="screenshot-placeholder">
-          <span>📸 Screenshot 2</span>
-          <p>Add your image here</p>
+          <span>AI race</span>
+          <p>Add puzzle2.png</p>
         </div>
         <div class="screenshot-placeholder">
-          <span>📸 Screenshot 3</span>
-          <p>Add your image here</p>
+          <span>Statistics</span>
+          <p>Add puzzle3.png</p>
         </div>
       </div>
-      <!-- Once you have screenshots, replace placeholders with:
-      <div class="screenshots-grid">
-        <img src="images/puzzle1.png" alt="8-Puzzle home screen">
-        <img src="images/puzzle2.png" alt="8-Puzzle AI race mode">
-        <img src="images/puzzle3.png" alt="8-Puzzle statistics">
-      </div>
-      -->
+      <p class="shot-caption">Replace each placeholder with
+        <code>&lt;img src="puzzle1.png" alt="8-Puzzle Lab home screen"&gt;</code> once the screenshots are in the folder.
+      </p>
     </section>
 
   </div>
 
+  <div class="project-next">
+    <p>Next project</p>
+    <a class="btn btn-ghost" href="quiz.html">Quiz Game</a>
+  </div>
+
   <footer>
-    <p>Made by Mira ✨ · <a href="mailto:your@email.com">your@email.com</a></p>
+    <p>Designed and built by Mira Saade · <a href="mailto:mirasaade20@gmail.com">mirasaade20@gmail.com</a></p>
   </footer>
 
 </body>
+
 </html>
