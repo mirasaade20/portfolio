@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CrimeTracker — Android + web reporting system | Mira Saade</title>
+  <meta name="description"
+    content="CrimeTracker: a dual-platform crime reporting system with a Kotlin Android app and a PHP/MySQL web backend.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+  <header class="nav-wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="index.html">Mira</a>
+      <a href="index.html" class="back-btn">← Back to portfolio</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="project-hero">
+    <div class="project-hero-content">
+      <p class="crumb"><a href="index.html">Portfolio</a> / Projects / CrimeTracker</p>
+
+      <h1>CrimeTracker</h1>
+      <p class="lede">
+        A crime reporting system that spans two platforms: reports are filed from a native Android app, with photo,
+        video and audio evidence attached, and reviewed through a PHP and MySQL web backend.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">Kotlin</span><span class="tag">PHP</span><span class="tag">MySQL</span><span
+          class="tag">Firebase</span><span class="tag">Android</span>
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Android app, web backend and UI</dd>
+        </div>
+        <div>
+          <dt>Platforms</dt>
+          <dd>Android app + web dashboard</dd>
+        </div>
+        <div>
+          <dt>Data</dt>
+          <dd>MySQL with Firebase services</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>Academic project</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="project-body">
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-label">The problem</span>
+          <p>Reporting an incident happens on a phone, in the moment. Reviewing reports happens later, at a desk, across
+            many entries. One interface can't serve both well.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">My approach</span>
+          <p>Two front ends over one data layer: a native Android app for filing with evidence attached, and a PHP web
+            interface for browsing and reviewing what comes in.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Result</span>
+          <p>A working dual-platform system handling photo, video and audio evidence, with crime listings redesigned to
+            be readable at a glance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="project-section">
+      <h2>What it does</h2>
+      <ul class="feature-list">
+        <li><strong>File a report from the phone</strong> — native Android app built in Kotlin</li>
+        <li><strong>Evidence handling</strong> — photo, video and audio captured and attached to a report</li>
+        <li><strong>Web backend</strong> — PHP and MySQL for storing, listing and browsing submitted reports</li>
+        <li><strong>Firebase services</strong> — integrated alongside the PHP backend</li>
+        <li><strong>Redesigned crime listings</strong> — the review interface reworked so entries scan quickly instead
+          of reading like a raw table dump</li>
+      </ul>
+    </section>
+
+    <!-- BUILD NOTES -->
+    <section class="project-section">
+      <h2>Build notes</h2>
+      <ul class="challenge-list">
+        <li>
+          <h3>Two platforms, one source of truth</h3>
+          <p>Keeping the Android client and the web backend in agreement about the shape of a report, including its
+            media attachments, was the core design work.</p>
+        </li>
+        <li>
+          <h3>Media is heavier than text</h3>
+          <p>Photo, video and audio evidence changes how uploads, storage and listing views have to behave compared to a
+            simple text form.</p>
+        </li>
+        <li>
+          <h3>Android build and configuration issues</h3>
+          <p>A real share of the project went on diagnosing build and configuration failures rather than writing
+            features — useful practice in reading errors properly instead of guessing.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STACK -->
+    <section class="project-section">
+      <h2>Stack</h2>
+      <table class="stack-table">
+        <tbody>
+          <tr>
+            <th scope="row">Mobile</th>
+            <td>Kotlin, Android Studio</td>
+          </tr>
+          <tr>
+            <th scope="row">Web</th>
+            <td>PHP, HTML, CSS, JavaScript</td>
+          </tr>
+          <tr>
+            <th scope="row">Database</th>
+            <td>MySQL (XAMPP in development)</td>
+          </tr>
+          <tr>
+            <th scope="row">Services</th>
+            <td>Firebase</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="project-section">
+      <h2>Screens</h2>
+      <div class="screenshots-grid">
+        <div class="screenshot-placeholder">
+          <span>Report form — Android</span>
+          <p>Add crime1.png</p>
+        </div>
+        <div class="screenshot-placeholder">
+          <span>Evidence attachment</span>
+          <p>Add crime2.png</p>
+        </div>
+        <div class="screenshot-placeholder">
+          <span>Web listings</span>
+          <p>Add crime3.png</p>
+        </div>
+      </div>
+      <p class="shot-caption">Replace each placeholder with
+        <code>&lt;img src="crime1.png" alt="CrimeTracker report form"&gt;</code> once the screenshots are in the folder.
+      </p>
+    </section>
+
+  </div>
+
+  <div class="project-next">
+    <p>Next project</p>
+    <a class="btn btn-primary" href="puzzle.html">8-Puzzle Lab →</a>
+  </div>
+
+  <footer>
+    <p>Designed &amp; built by Mira ✨ · <a href="mailto:mirasaade20@gmail.com">mirasaade20@gmail.com</a></p>
+  </footer>
+
+</body>
+
+</html>
