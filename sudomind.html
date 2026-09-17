@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SudoMind — Android Sudoku app | Mira Saade</title>
+  <meta name="description"
+    content="SudoMind: a Kotlin Android Sudoku app with a technique-based hint engine, daily challenges, events and statistics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+  <header class="nav-wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="index.html">Mira</a>
+      <a href="index.html" class="back-btn">← Back to portfolio</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <div class="project-hero">
+    <div class="project-hero-content">
+      <p class="crumb"><a href="index.html">Portfolio</a> / Projects / SudoMind</p>
+
+      <h1>SudoMind</h1>
+      <p class="lede">
+        An Android Sudoku app built end to end — including a hint engine that solves the way a person would, so a stuck
+        player learns a technique instead of being handed a number.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">Kotlin</span><span class="tag">Android Studio</span><span class="tag">UI/UX</span><span
+          class="tag">Game logic</span><span class="tag">AdMob</span>
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Solo — design and development</dd>
+        </div>
+        <div>
+          <dt>Platform</dt>
+          <dd>Android phones and tablets</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>Version 5, preparing for Google Play</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>Personal project, ongoing</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="project-body">
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+      <h2>Overview</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <span class="info-label">The problem</span>
+          <p>Most Sudoku apps hand you the correct digit when you ask for help. That ends the puzzle instead of teaching
+            you how to get past it.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">My approach</span>
+          <p>I wrote a hint engine around real solving techniques, then designed the whole app — progression, events,
+            statistics, themes — as a product rather than a single screen.</p>
+        </div>
+        <div class="info-card">
+          <span class="info-label">Result</span>
+          <p>A complete, themeable app on its fifth iteration, now in release preparation with AdMob integrated.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="project-section">
+      <h2>What's in it</h2>
+      <ul class="feature-list">
+        <li><strong>Technique-based hint engine</strong> — hints come from human solving strategies, so each one points
+          at the reasoning rather than the answer</li>
+        <li><strong>Daily challenges and streaks</strong> — a reason to open the app tomorrow, with progress that
+          persists</li>
+        <li><strong>Swipeable difficulty tabs</strong> — ViewPager2 navigation between difficulty levels</li>
+        <li><strong>Animated how-to-play tutorial</strong> — onboarding that shows the rules instead of listing them</li>
+        <li><strong>In-app events with live countdowns</strong> — timed events backed by persistent notifications</li>
+        <li><strong>Statistics</strong> — solve times, completion rates and history per difficulty</li>
+        <li><strong>Themes and settings</strong> — multiple visual themes and a full settings system</li>
+        <li><strong>Custom win and game-over dialogs</strong> — designed screens rather than default alerts</li>
+      </ul>
+    </section>
+
+    <!-- BUILD NOTES -->
+    <section class="project-section">
+      <h2>Build notes</h2>
+      <ul class="challenge-list">
+        <li>
+          <h3>Making hints teach rather than solve</h3>
+          <p>The engine works out which technique applies to the current board and surfaces that, which meant
+            implementing the solving strategies themselves instead of reading from a stored solution.</p>
+        </li>
+        <li>
+          <h3>Keeping state consistent across sessions</h3>
+          <p>Streaks, statistics, event countdowns and notifications all have to agree with each other after the app is
+            closed, reopened, or left alone for days.</p>
+        </li>
+        <li>
+          <h3>A win dialog that silently refused to fire</h3>
+          <p>Tracked down to Windows line endings in a file the logic depended on — a good reminder that a bug making no
+            sense in the logic is often not in the logic.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- STACK -->
+    <section class="project-section">
+      <h2>Stack</h2>
+      <table class="stack-table">
+        <tbody>
+          <tr>
+            <th scope="row">Language</th>
+            <td>Kotlin</td>
+          </tr>
+          <tr>
+            <th scope="row">Environment</th>
+            <td>Android Studio</td>
+          </tr>
+          <tr>
+            <th scope="row">UI</th>
+            <td>ViewPager2, custom dialogs, themeable styles, animated tutorial</td>
+          </tr>
+          <tr>
+            <th scope="row">System</th>
+            <td>Local persistence for streaks and statistics, scheduled notifications</td>
+          </tr>
+          <tr>
+            <th scope="row">Monetisation</th>
+            <td>Google AdMob</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="project-section">
+      <h2>Screens</h2>
+      <div class="screenshots-grid">
+        <div class="screenshot-placeholder">
+          <span>Home &amp; difficulty tabs</span>
+          <p>Add sudomind1.png</p>
+        </div>
+        <div class="screenshot-placeholder">
+          <span>Board with a hint</span>
+          <p>Add sudomind2.png</p>
+        </div>
+        <div class="screenshot-placeholder">
+          <span>Statistics</span>
+          <p>Add sudomind3.png</p>
+        </div>
+      </div>
+      <p class="shot-caption">Replace each placeholder with
+        <code>&lt;img src="sudomind1.png" alt="SudoMind home screen"&gt;</code> once the screenshots are in the folder.
+      </p>
+    </section>
+
+  </div>
+
+  <div class="project-next">
+    <p>Next project</p>
+    <a class="btn btn-primary" href="crimetracker.html">CrimeTracker →</a>
+  </div>
+
+  <footer>
+    <p>Designed &amp; built by Mira ✨ · <a href="mailto:mirasaade20@gmail.com">mirasaade20@gmail.com</a></p>
+  </footer>
+
+</body>
+
+</html>
