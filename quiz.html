@@ -1,88 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Game | Mira's Portfolio</title>
+  <title>Quiz Game — browser trivia, no frameworks | Mira Saade</title>
+  <meta name="description"
+    content="Quiz Game: a programming trivia game built in vanilla HTML, CSS and JavaScript with free navigation and a results screen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="project.css">
 </head>
+
 <body>
 
-  <nav>
-    <div class="logo">Mira</div>
-    <a href="index.html" class="back-btn">← Back to Portfolio</a>
-  </nav>
+  <header class="nav-wrap">
+    <nav aria-label="Main">
+      <a class="logo" href="index.html">Mira</a>
+      <a href="index.html" class="back-btn">← Back to portfolio</a>
+    </nav>
+  </header>
 
   <!-- HERO -->
   <div class="project-hero">
     <div class="project-hero-content">
-      <div class="project-tags">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Web</span>
-      </div>
+      <p class="crumb"><a href="index.html">Portfolio</a> / Projects / Quiz Game</p>
+
       <h1>Quiz Game</h1>
-      <p>A web-based programming trivia quiz with 5 questions, navigation, score tracking, and a results screen — no frameworks, pure web.</p>
+      <p class="lede">
+        A programming trivia game that runs entirely in the browser — free navigation between questions, an option to
+        finish early, and a results screen. No frameworks, no backend, no dependencies.
+      </p>
+
+      <div class="project-tags">
+        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span
+          class="tag">Vanilla web</span>
+      </div>
+
+      <dl class="project-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>Built with a classmate — UI and game flow</dd>
+        </div>
+        <div>
+          <dt>Dependencies</dt>
+          <dd>None</dd>
+        </div>
+        <div>
+          <dt>Runs on</dt>
+          <dd>Any browser, opened as a file</dd>
+        </div>
+        <div>
+          <dt>Type</dt>
+          <dd>Academic project</dd>
+        </div>
+      </dl>
     </div>
   </div>
 
   <div class="project-body">
 
-    <!-- VIDEO -->
-    <section class="project-section">
-      <h2>Demo Video</h2>
-      <div class="project-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/pGNWIOs5JM0?si=t8QTlGQ1ZAHev9mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </div>
-    </section>
-
     <!-- OVERVIEW -->
     <section class="project-section">
-      <h2>Project Overview</h2>
+      <h2>Overview</h2>
       <div class="info-grid">
         <div class="info-card">
-          <span class="info-label">The Problem</span>
-          <p>Needed a fun interactive way to test programming knowledge, without any backend, server, or external libraries.</p>
+          <span class="info-label">The problem</span>
+          <p>Build something genuinely interactive with no server, no libraries and nothing to install — the browser and
+            nothing else.</p>
         </div>
         <div class="info-card">
-          <span class="info-label">My Approach</span>
-          <p>Built entirely in vanilla HTML, CSS, and JavaScript. Questions render dynamically and the user can navigate back and forth freely.</p>
+          <span class="info-label">My approach</span>
+          <p>Questions render dynamically from a data array, state lives in JavaScript, and the visual direction went
+            deliberately loud: a game-show look with marquee animation and buzzer-style buttons.</p>
         </div>
         <div class="info-card">
           <span class="info-label">Result</span>
-          <p>A clean, responsive quiz app that runs entirely in the browser with zero dependencies.</p>
+          <p>A responsive quiz that loads instantly, works offline and can be handed to anyone as a single folder.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- DEMO -->
+    <section class="project-section">
+      <h2>Demo</h2>
+      <div class="project-video">
+        <iframe src="https://www.youtube.com/embed/pGNWIOs5JM0?si=t8QTlGQ1ZAHev9mw" title="Quiz Game demo video"
+          loading="lazy" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </section>
 
     <!-- FEATURES -->
     <section class="project-section">
-      <h2>Features</h2>
+      <h2>What's in it</h2>
       <ul class="feature-list">
-        <li>❓ <strong>5 Programming Questions</strong> — multiple choice trivia about code</li>
-        <li>⬅️ <strong>Previous / Next Navigation</strong> — move freely between questions</li>
-        <li>🏁 <strong>End Game Anytime</strong> — option to finish early</li>
-        <li>🏆 <strong>Score Screen</strong> — results shown at the end with final score</li>
-        <li>🔁 <strong>Restart</strong> — play again without refreshing the page</li>
+        <li><strong>Multiple-choice programming questions</strong> — rendered dynamically rather than hard-coded into
+          the markup</li>
+        <li><strong>Previous and next navigation</strong> — answers are kept, so you can go back and change your mind</li>
+        <li><strong>End the game early</strong> — score what you've answered so far</li>
+        <li><strong>Results screen</strong> — final score with a restart that doesn't need a page refresh</li>
+        <li><strong>Game-show visual theme</strong> — marquee animation, buzzer-style answer buttons, deep purple
+          backdrop</li>
+      </ul>
+    </section>
+
+    <!-- BUILD NOTES -->
+    <section class="project-section">
+      <h2>Build notes</h2>
+      <ul class="challenge-list">
+        <li>
+          <h3>A start button that did nothing</h3>
+          <p>Traced to a jQuery CDN conflict rather than the button's own code — fixed by removing a dependency the
+            project never needed in the first place.</p>
+        </li>
+        <li>
+          <h3>Answer feedback logic</h3>
+          <p>Reworked so that revisiting a question shows the state you left it in, instead of re-scoring or resetting
+            it.</p>
+        </li>
+        <li>
+          <h3>Finding the right visual direction</h3>
+          <p>Several themes were tried and discarded before the game-show look, which was the first one that matched how
+            the game actually plays.</p>
+        </li>
       </ul>
     </section>
 
     <!-- SCREENSHOTS -->
     <section class="project-section">
-      <h2>Screenshots</h2>
-     <div class="screenshots-grid">
-  <img src="quiz1.png" alt="Quiz Game question">
-  <img src="quiz2.png" alt="Quiz Game results">
-</div>
+      <h2>Screens</h2>
+      <div class="screenshots-grid">
+        <img src="quiz1.png" alt="Quiz Game question screen with answer buttons">
+        <img src="quiz2.png" alt="Quiz Game results screen showing the final score">
+      </div>
     </section>
 
   </div>
 
+  <div class="project-next">
+    <p>Next project</p>
+    <a class="btn btn-primary" href="sudomind.html">SudoMind →</a>
+  </div>
+
   <footer>
-    <p>Made by Mira ✨ · <a href="mailto:your@email.com">mirasaade20@gmail.com</a></p>
+    <p>Designed &amp; built by Mira ✨ · <a href="mailto:mirasaade20@gmail.com">mirasaade20@gmail.com</a></p>
   </footer>
 
 </body>
+
 </html>
