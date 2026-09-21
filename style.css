@@ -629,6 +629,40 @@ main section {
 .projects-footnote { margin-top: 2rem; font-size: 0.93rem; color: var(--ink-soft); }
 .projects-footnote a { color: var(--violet-dk); font-weight: 600; }
 
+/* ===== COMING SOON CARD ===== */
+.card-soon {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2.2rem 1.8rem;
+  background: linear-gradient(140deg, #fdf4ff, #f0fdfa);
+  border: 2px dashed #c4b5fd;
+  box-shadow: none;
+}
+
+.card-soon::before { display: none; }
+
+.card-soon:hover { transform: translateY(-6px); border-color: var(--violet); }
+
+.soon-icon {
+  width: 46px; height: 46px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--brand);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.card-soon h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.6rem; }
+
+.card-soon .card-desc { max-width: 32ch; margin: 0 auto; }
+
+.card-soon .more-btn { margin: 1.3rem auto 0; }
+
 /* ===== EDUCATION ===== */
 #education {
   max-width: 100%;
